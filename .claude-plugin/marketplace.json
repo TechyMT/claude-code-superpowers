@@ -1,0 +1,16 @@
+{
+  "name": "claude-code-superpowers",
+  "description": "16 engineering patterns extracted from the Claude Code codebase, packaged as skills for any AI coding assistant",
+  "plugins": [
+    {
+      "name": "claude-code-superpowers",
+      "description": "16 engineering patterns extracted from the Claude Code codebase, packaged as skills for any AI coding assistant",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "Mustafa Trunkwala",
+        "url": "https://mustafatrunkwala.netlify.app"
+      }
+    }
+  ]
+}

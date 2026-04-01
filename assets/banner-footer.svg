@@ -1,0 +1,21 @@
+<svg width="1200" height="60" viewBox="0 0 1200 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#070712"/>
+      <stop offset="50%" stop-color="#0f0f1e"/>
+      <stop offset="100%" stop-color="#070712"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6d28d9"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="60" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="1.5" fill="url(#accent)" opacity="0.6"/>
+  <text x="600" y="38" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace"
+        font-size="11" letter-spacing="3" fill="#4b5563">
+    CLAUDE CODE SUPERPOWERS · MIT LICENSE
+  </text>
+</svg>

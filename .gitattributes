@@ -1,0 +1,10 @@
+# Ensure consistent line endings
+*.md   text eol=lf
+*.json text eol=lf
+*.ts   text eol=lf
+*.sh   text eol=lf
+
+# Binary
+*.png  binary
+*.jpg  binary
+*.svg  text eol=lf

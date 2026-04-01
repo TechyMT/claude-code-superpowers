@@ -1,0 +1,118 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "tool|capability|build tool|write tool|add tool|implement tool|new command",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/domain-model"
+          },
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/build-tool-factory"
+          }
+        ]
+      },
+      {
+        "matcher": "permission|side effect|file write|shell|network request|access control",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/permission-system"
+          }
+        ]
+      },
+      {
+        "matcher": "error handling|exception|failure|try catch|error propagation",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/error-handling"
+          }
+        ]
+      },
+      {
+        "matcher": "concurrent|parallel|async|cancellation|abort|read.only",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/async-concurrency"
+          }
+        ]
+      },
+      {
+        "matcher": "background|long.running|task|queue|job|spawn",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/task-system"
+          }
+        ]
+      },
+      {
+        "matcher": "state|AppState|shared state|setAppState|global state|store",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/state-management"
+          }
+        ]
+      },
+      {
+        "matcher": "logging|observability|instrumentation|telemetry|metrics|tracing",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/observability"
+          }
+        ]
+      },
+      {
+        "matcher": "schema|type|interface|zod|validation|infer",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/types-and-interfaces"
+          }
+        ]
+      },
+      {
+        "matcher": "startup|performance|slow|latency|optimise|memoize|cache",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/hot-paths"
+          }
+        ]
+      },
+      {
+        "matcher": "api|external|integration|boundary|http|fetch|service",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/system-boundaries"
+          }
+        ]
+      },
+      {
+        "matcher": "slash command|skill|plugin|command dispatch|fork|inline execution",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/skill-and-command-dispatch"
+          }
+        ]
+      },
+      {
+        "matcher": "write skill|create skill|new skill|extract pattern|skill.md",
+        "hooks": [
+          {
+            "type": "skill",
+            "skill": "claude-code-superpowers/creating-skills"
+          }
+        ]
+      }
+    ]
+  }
+}

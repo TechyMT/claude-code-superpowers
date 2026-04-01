@@ -1,0 +1,26 @@
+{
+  "name": "claude-code-superpowers",
+  "displayName": "Claude Code Superpowers",
+  "description": "16 engineering patterns extracted from the Claude Code codebase, packaged as skills for any AI coding assistant",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mustafa Trunkwala",
+    "url": "https://mustafatrunkwala.netlify.app"
+  },
+  "homepage": "https://github.com/TechyMT/claude-code-superpowers",
+  "repository": "https://github.com/TechyMT/claude-code-superpowers",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "skills",
+    "engineering-patterns",
+    "ai-assistant",
+    "llm",
+    "typescript",
+    "architecture",
+    "cursor",
+    "gemini",
+    "agentic"
+  ],
+  "skills": "./skills/"
+}

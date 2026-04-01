@@ -1,0 +1,117 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient: deep dark navy -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070712"/>
+      <stop offset="100%" stop-color="#0f0f1e"/>
+    </linearGradient>
+
+    <!-- Primary accent gradient: purple → cyan -->
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6d28d9"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <!-- Radial glow behind title -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4c1d95" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#070712" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Glow filter for title text -->
+    <filter id="textGlow" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft blur for decorative circles -->
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+
+    <!-- Clip to banner bounds -->
+    <clipPath id="bounds">
+      <rect width="1200" height="280"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background fill -->
+  <rect width="1200" height="280" fill="url(#bg)"/>
+
+  <!-- Ambient glow blobs (clipped) -->
+  <g clip-path="url(#bounds)">
+    <circle cx="200" cy="140" r="180" fill="#4c1d95" opacity="0.18" filter="url(#softBlur)"/>
+    <circle cx="1000" cy="140" r="180" fill="#0e7490" opacity="0.18" filter="url(#softBlur)"/>
+    <circle cx="600" cy="260" r="160" fill="#5b21b6" opacity="0.12" filter="url(#softBlur)"/>
+  </g>
+
+  <!-- Subtle dot grid -->
+  <g opacity="0.07">
+    <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#a78bfa"/>
+    </pattern>
+    <rect width="1200" height="280" fill="url(#dots)"/>
+  </g>
+
+  <!-- Center glow wash -->
+  <rect width="1200" height="280" fill="url(#centerGlow)"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="2.5" fill="url(#accent)" opacity="0.9"/>
+
+  <!-- Decorative side lines (left) -->
+  <line x1="60" y1="80" x2="60" y2="200" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <line x1="72" y1="100" x2="72" y2="180" stroke="#06b6d4" stroke-width="1" opacity="0.25"/>
+
+  <!-- Decorative side lines (right) -->
+  <line x1="1140" y1="80" x2="1140" y2="200" stroke="#7c3aed" stroke-width="1" opacity="0.4"/>
+  <line x1="1128" y1="100" x2="1128" y2="180" stroke="#06b6d4" stroke-width="1" opacity="0.25"/>
+
+  <!-- Corner brackets (top-left) -->
+  <polyline points="30,50 30,30 50,30" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.6"/>
+  <!-- Corner brackets (top-right) -->
+  <polyline points="1170,50 1170,30 1150,30" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.6"/>
+  <!-- Corner brackets (bottom-left) -->
+  <polyline points="30,230 30,250 50,250" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.6"/>
+  <!-- Corner brackets (bottom-right) -->
+  <polyline points="1170,230 1170,250 1150,250" fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.6"/>
+
+  <!-- Horizontal rule above title -->
+  <line x1="420" y1="92" x2="780" y2="92" stroke="url(#accent)" stroke-width="1" opacity="0.5"/>
+
+  <!-- Eyebrow label -->
+  <text x="600" y="84" text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace"
+        font-size="11" letter-spacing="4" fill="#a78bfa" opacity="0.85">
+    EXTRACTED FROM SOURCE · PRODUCTION CODEBASE
+  </text>
+
+  <!-- Main title -->
+  <text x="600" y="160"
+        text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="58" font-weight="700" letter-spacing="-1"
+        fill="white"
+        filter="url(#textGlow)">
+    Claude Code Superpowers
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="198"
+        text-anchor="middle"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16" font-weight="400" letter-spacing="0.3"
+        fill="#94a3b8">
+    16 skills · production-extracted · works with every AI assistant
+  </text>
+
+  <!-- Horizontal rule below subtitle -->
+  <line x1="420" y1="218" x2="780" y2="218" stroke="url(#accent)" stroke-width="1" opacity="0.5"/>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="277.5" width="1200" height="2.5" fill="url(#accent)" opacity="0.9"/>
+</svg>
